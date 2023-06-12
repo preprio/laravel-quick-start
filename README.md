@@ -21,11 +21,6 @@ Make sure to install the dependencies:
 ```
 composer install
 ```
-    
-```
-npm install
-npm run dev
-```
 
 ### Generate App Key
 

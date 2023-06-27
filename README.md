@@ -1,6 +1,8 @@
 ## Laravel Quick Start
 
-Look at the Laravel [documentation](https://docs.prepr.io/connecting-front-end-apps/laravel) to learn more.
+The Laravel quick start project launches a blog app with content from Prepr.
+
+Look at the [Laravel Quick start guide](https://docs.prepr.io/connecting-front-end-apps/laravel-quick-start-guide) to learn more.
 
 ## Add the environment file
 

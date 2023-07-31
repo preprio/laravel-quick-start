@@ -1,0 +1,7 @@
+{
+  "name": "Prepr CMS Laravel Quick Start",
+  "description": "A Laravel Quick Start",
+  "repository": "https://github.com/preprio/laravel-quick-start",
+  "logo": "https://avatars.githubusercontent.com/u/11192094?s=200&v=4",
+  "keywords": ["php", "laravel", "preprcms"]
+}

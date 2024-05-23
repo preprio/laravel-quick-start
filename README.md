@@ -30,6 +30,14 @@ composer install
 php artisan key:generate
 ```
 
+### Create Database File
+
+Create the SQLite database file used in this project. If you'd like to use a different database, check out the [Laravel docs](https://laravel.com/docs/11.x/database) for more details.
+
+``` 
+php artisan migrate
+```
+
 ## Development Server
 
 Start the development server on http://localhost:8000

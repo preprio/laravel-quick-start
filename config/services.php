@@ -34,8 +34,9 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
-
     'prepr' => [
-        'endpoint' => env('PREPR_ENDPOINT')
+        'endpoint' => env('PREPR_ENDPOINT'),
+        'timeout' => env('PREPR_TIMEOUT'),
+        'connect_timeout' => env('PREPR_CONNECT_TIMEOUT'),
     ],
 ];

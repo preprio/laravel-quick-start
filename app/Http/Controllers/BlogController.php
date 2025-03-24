@@ -9,26 +9,26 @@ class BlogController extends Controller
     public function index()
     {
         $response = Http::prepr([
-            'query' => 'get-articles'
+            'query' => 'get-posts'
         ]);
 
         return view('pages.blog.index', [
-            'articles' => data_get($response->json(), 'data.Articles'),
+            'articles' => data_get($response->json(), 'data.Posts'),
         ]);
     }
 
     public function show(string $slug)
     {
         $response = Http::prepr([
-            'query' => 'get-article-detail',
+            'query' => 'get-post-detail',
             'variables' => [
                 'slug' => $slug,
             ]
         ]);
 
-        if(data_get($response->json(), 'data.Article')) {
+        if(data_get($response->json(), 'data.Post')) {
             return view('pages.blog.show', [
-                'article' => data_get($response->json(), 'data.Article'),
+                'article' => data_get($response->json(), 'data.Post'),
             ]);
         }
         abort(404);

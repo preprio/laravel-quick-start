@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Http;
 
-class BlogController extends Controller
+class PostController extends Controller
 {
     public function index()
     {
@@ -12,7 +12,7 @@ class BlogController extends Controller
             'query' => 'get-posts'
         ]);
 
-        return view('pages.blog.index', [
+        return view('pages.post.index', [
             'articles' => data_get($response->json(), 'data.Posts'),
         ]);
     }
@@ -20,15 +20,15 @@ class BlogController extends Controller
     public function show(string $slug)
     {
         $response = Http::prepr([
-            'query' => 'get-post-detail',
+            'query' => 'get-post-by-slug',
             'variables' => [
                 'slug' => $slug,
             ]
         ]);
 
         if(data_get($response->json(), 'data.Post')) {
-            return view('pages.blog.show', [
-                'article' => data_get($response->json(), 'data.Post'),
+            return view('pages.post.show', [
+                'post' => data_get($response->json(), 'data.Post'),
             ]);
         }
         abort(404);

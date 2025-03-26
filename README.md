@@ -14,7 +14,7 @@ cp .env.example .env
 
 ## Update the environment file
 
-In the .env file replace <YOUR-ENDPOINT> with the Prepr endpoint from your environment with demo content.
+In the .env file replace the value for the `PREPR_ENDPOINT` with the Prepr *API URL* from the *GraphQL Production* access token in your environment with Demo content.
 
 ## Setup
 
@@ -49,3 +49,9 @@ php artisan serve
 ## Production
 
 Check out the [deployment documentation](https://laravel.com/docs/10.x/deployment) for more information.
+
+## The end result
+
+![Laravel Blog site end result](https://assets-site.prepr.io/762yqmjtwcuu//laravel-blog-site.png)
+
+

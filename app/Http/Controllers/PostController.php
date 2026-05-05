@@ -22,7 +22,7 @@ class PostController extends Controller
         $response = Http::prepr([
             'query' => 'get-post-by-slug',
             'variables' => [
-                'slug' => $slug,
+                'slug' => "blog/$slug",
             ]
         ]);
 

@@ -2,7 +2,7 @@
     <h1>{{ data_get($post,'title') }}</h1>
 
     <div class="my-10">
-        <img src="{{ data_get($post,'cover.url') }}" />
+        <img src="{{ data_get($post,'cover.0.url') }}" />
     </div>
 
     @if(data_get($post,'content'))

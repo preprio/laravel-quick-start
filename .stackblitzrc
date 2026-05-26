@@ -1,0 +1,5 @@
+{
+  "env": {
+    "PREPR_ENDPOINT": "<YOUR-PREPR-API-URL>"
+  }
+}
